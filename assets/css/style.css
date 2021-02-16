@@ -347,6 +347,26 @@ section {
   margin-bottom: 0;
 }
 
+.section-title-sm h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title-sm h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -434,9 +454,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
+  height: 45px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress-title {
   height: 60px;
   display: block;
   background: none;
@@ -448,7 +475,6 @@ section {
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
-  font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #050d18;
 }
@@ -456,6 +482,15 @@ section {
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
+}
+
+.skills .progress-title .title {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  color: #149ddd;
 }
 
 .skills .progress-bar-wrap {
@@ -786,6 +821,29 @@ section {
   height: 75vh;
 }
 
+.banner-h-auto {
+  width: 100%;
+  height: auto;
+}
+
+.banner-img {
+  min-height: 30rem;
+  height: 100%;
+  background-position: center center fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  .banner-img {
+    height: 100vh;
+  }
+  .banner-img h1 {
+    font-size: 5.5rem;
+  }
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
